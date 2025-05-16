@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>猜歌遊戲</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-container">
+    <h1>猜歌遊戲</h1>
+    <button id="start-btn">開始遊戲</button>
+    <div id="game-area" class="hidden">
+      <p id="question-number">1 / 10</p>
+      <audio id="audio" controls></audio>
+      <input type="text" id="answer" placeholder="輸入歌名..." />
+      <button id="submit">提交答案</button>
+      <button id="skip">跳過</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>遊戲結束！</h2>
+      <p id="score">你的得分：0 / 10</p>
+      <button onclick="location.reload()">再玩一次</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
